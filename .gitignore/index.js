@@ -31,7 +31,7 @@ function play(connection, message) {
 client.on("ready", () => {
 
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setGame("Vaut mieux pas que tu sache");
+    bot.user.setGame("Cp help pour afficher le menu des commandes");
 
 });
 
