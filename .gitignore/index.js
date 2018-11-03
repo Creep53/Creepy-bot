@@ -219,7 +219,10 @@ client.on('message', async message => {
         message.author.send(stats_embed);
 
         break;
-        
+	    case "ping":
+  message.channel.SendMessage('Temp de latence avec le serveur:'' + ' §{message.createdTimestamp - Date.now()}'+'ms'');
+  break;	  
+		    
   case "play":
 
     if (!args[1]) {
